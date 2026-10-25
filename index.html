@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Landmarks of the World</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600&family=Young+Serif&display=swap">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="#top">Landmarks of the World</a>
+    <nav aria-label="Main">
+      <ul>
+        <li><a href="#introduction">Introduction</a></li>
+        <li><a href="#iconic-places">Iconic Places</a></li>
+        <li><a href="#visitor-guide">Visitor Guide</a></li>
+        <li><a href="#preservation">Preservation</a></li>
+      </ul>
+    </nav>
+    <div class="tools"><button class="icon-btn" id="theme" type="button" aria-label="Switch between light and dark theme">Theme</button></div>
+  </div>
+</header>
+<div class="progress-bar" id="bar" aria-hidden="true"></div>
+
+<main id="top">
+  <div class="hero">
+    <img src="assets/images/main.jpg" alt="Ancient stone terraces and ruins on a green mountain ridge, with clouds over the valley beyond" width="1050" height="698">
+    <div class="wrap">
+      <h1>Landmarks of the World</h1>
+      <p>Discover the stories behind places recognized across the globe.</p>
+      <a class="cta" href="#iconic-places">Explore the landmarks ↓</a>
+    </div>
+  </div>
+
+  <section id="introduction">
+    <div class="wrap intro">
+      <div>
+        <span class="label">Introduction</span>
+        <h2>Places That Represent History and Culture</h2>
+      </div>
+      <div class="text">
+        <p>Landmarks are structures or locations that become closely connected with a country's identity. They may be admired because of their architecture, history, cultural meaning, or impressive scale.</p>
+        <p>Visiting a landmark gives travelers an opportunity to learn beyond photographs. The surrounding streets, landscapes, museums, and communities can reveal how the site continues to influence people today.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="iconic-places" style="padding-top:0">
+    <div class="wrap">
+      <span class="label">Iconic Places</span>
+      <h2>Three Iconic Destinations</h2>
+      <div class="cards">
+        <article class="card">
+          <button class="zoom" type="button" data-src="assets/images/card1.jpg" data-cap="Eiffel Tower, Paris, France" aria-label="Enlarge photo of the Eiffel Tower"><img src="assets/images/card1.jpg" alt="The Eiffel Tower rising above Paris" width="1500" height="938" loading="lazy"><span>Enlarge</span></button>
+          <div class="body">
+            <h3>Eiffel Tower</h3>
+            <p>The Eiffel Tower was built in Paris for the 1889 World's Fair. Its iron framework and distinctive shape turned it into one of the most recognizable symbols of France.</p>
+            <p class="detail"><b>Location</b> — Paris, France</p>
+          </div>
+        </article>
+        <article class="card">
+          <button class="zoom" type="button" data-src="assets/images/card2.jpg" data-cap="Great Wall of China" aria-label="Enlarge photo of the Great Wall of China"><img src="assets/images/card2.jpg" alt="The Great Wall of China winding over green mountains" width="1050" height="700" loading="lazy"><span>Enlarge</span></button>
+          <div class="body">
+            <h3>Great Wall of China</h3>
+            <p>The Great Wall consists of fortifications built across northern China during different historical periods. Its paths cross mountains, grasslands, and other dramatic landscapes.</p>
+            <p class="detail"><b>Category</b> — Historic fortification system</p>
+          </div>
+        </article>
+        <article class="card">
+          <button class="zoom" type="button" data-src="assets/images/card3.jpg" data-cap="Taj Mahal, Agra, India" aria-label="Enlarge photo of the Taj Mahal"><img src="assets/images/card3.jpg" alt="The white marble Taj Mahal beside its reflecting pool" width="1050" height="700" loading="lazy"><span>Enlarge</span></button>
+          <div class="body">
+            <h3>Taj Mahal</h3>
+            <p>The Taj Mahal is a white marble mausoleum celebrated for its symmetry, detailed decoration, gardens, and reflecting pool. It was commissioned by Emperor Shah Jahan.</p>
+            <p class="detail"><b>Location</b> — Agra, India</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="visitor-guide" class="guide">
+    <div class="wrap guide-grid">
+      <div>
+        <span class="label">Visitor Guide</span>
+        <h2>Responsible Landmark Visits</h2>
+        <p class="lead">Famous sites receive many visitors. Careful behavior helps protect the location and creates a better experience for travelers and local communities.</p>
+        <ol>
+          <li><label><input type="checkbox"><span>Research opening hours and visitor regulations.</span></label></li>
+          <li><label><input type="checkbox"><span>Purchase tickets through official channels when required.</span></label></li>
+          <li><label><input type="checkbox"><span>Follow signs, barriers, and designated walking paths.</span></label></li>
+          <li><label><input type="checkbox"><span>Avoid touching fragile surfaces or historic objects.</span></label></li>
+          <li><label><input type="checkbox"><span>Ask permission before photographing people.</span></label></li>
+          <li><label><input type="checkbox"><span>Keep the area clean and reduce unnecessary waste.</span></label></li>
+          <li><label><input type="checkbox"><span>Learn about the site's history and cultural significance.</span></label></li>
+        </ol>
+        <div class="meter" id="meter" role="status"><span id="meter-text">Tick each step as you prepare: 0 of 7 done</span><div><i id="meter-fill"></i></div></div>
+      </div>
+      <aside aria-labelledby="tip-title">
+        <span class="label">Additional information</span>
+        <h3 id="tip-title">Travel Tip</h3>
+        <p>Arrive early when possible and prepare for weather changes. Comfortable shoes and a reusable water container can make long visits easier where permitted.</p>
+        <p class="short">Respect areas where photography or entry is restricted.</p>
+      </aside>
+    </div>
+  </section>
+
+  <section id="preservation">
+    <div class="wrap highlight">
+      <img src="assets/images/highlight.jpg" alt="Two hands holding a small tree with soil, set against a green background" width="759" height="422" loading="lazy">
+      <div class="text">
+        <div>
+          <span class="label">Preservation</span>
+          <h2>Protecting Places for the Future</h2>
+        </div>
+        <p>Landmarks can be affected by weather, pollution, natural disasters, conflict, and heavy tourism. Conservation teams study materials and repair damage using carefully planned methods.</p>
+        <p>Visitors also contribute to preservation by respecting rules and supporting responsible tourism. Even simple actions can help important places remain available to future generations.</p>
+        <p class="principle"><b>Travel principle</b>Take photographs, learn deeply, and leave the place unharmed.</p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p>Landmarks of the World © 2026 · Images for educational use</p>
+    <p>Webpage created by: Kaizer Entrata, 2026, [your year and section]</p>
+  </div>
+</footer>
+
+<dialog id="lightbox" aria-label="Enlarged photo"><button type="button" id="lb-close">Close ✕</button><img id="lb-img" alt=""><p id="lb-cap"></p></dialog>
+<button class="top-btn" id="top" type="button" aria-label="Back to top">↑</button>
+
+<script src="script/script.js"></script>
+</body>
+</html>
